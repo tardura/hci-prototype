@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Heyo Tool" />
+		<meta name="author" content="Team Warmule" />
+		<title>Dashboard | Heyo Tool</title>
+
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="s" href="favicon.png" />
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body id="page-dashboard">
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#heyo-main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Heyo Tool</a>
+				</div>
+				<div class="navbar-tools">
+					<ul class="nav navbar-right">
+						<li class="dropdown current user">
+							<a class="dropdown-toggle vcard" href="#" data-toggle="dropdown">
+								<img class="photo circle" src="./images/gravatar/avatar.png" alt="Current User Photo" />
+								<span class="fn displayname">Current User</span>
+								<i class="clip-chevron-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="profile.html"><i class="fa fa-user"></i> My Profile</a></li>
+								<li><a href="messages.html"><i class="fa fa-envelope"></i> Messages <span class="badge">3</span></a></li>
+								<li><a href="logout.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul> 
+				</div>
+<form class="navbar-form navbar-right" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+			</nav>
+			<div id="main" class="container">
+				<h2>Dashboard</h2>
+				<aside class="page-context col-md-2">
+					<div class="list-group">
+						<a class="list-group-item active" href="#">Dashboard</a>
+						<a class="list-group-item" href="#">Context Link</a>
+						<a class="list-group-item" href="#">Context Link</a>
+						<a class="list-group-item" href="#">Context Link</a>
+						<a class="list-group-item" href="#">Context Link</a>
+					</div>
+				</aside>
+				<section class="content col-md-6">
+					<div class="panel panel-default">
+								<div class="panel-heading">
+									<i class="fa fa-users"></i>
+									Bloggers: Awaiting Response
+									<div class="panel-tools pull-right">
+										<a href="index.html#" class="btn btn-xs btn-link panel-collapse collapses">
+										</a>
+										<a data-toggle="modal" href="index.html#panel-config" class="btn btn-xs btn-link panel-config">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<a href="index.html#" class="btn btn-xs btn-link panel-refresh">
+											<i class="fa fa-refresh"></i>
+										</a>
+										<a href="index.html#" class="btn btn-xs btn-link panel-close">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div style="height:300px" class="panel-body panel-scroll ps-container">
+									<table id="sample-table-1" class="table table-striped table-hover">
+										<thead>
+											<tr>
+												<th class="center">Photo</th>
+												<th>Full Name</th>
+												<th class="hidden-xs">Email</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="center"><img alt="image" src="./images/user.png"></td>
+												<td>Samuel Sterns</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													leader@example.com
+												</a></td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/gravatar/lizard.png"></td>
+												<td>Curt Connors</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													lizard@example.com
+												</a></td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/gravatar/rhino.png"></td>
+												<td>Aleksei Sytsevich</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													rhino@example.com
+												</a></td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/user.png"></td>
+												<td>Wade Wilson</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													deadpool@example.com
+												</a></td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/user.png"></td>
+												<td>Mercedes Merced</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													org@example.com
+												</a></td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+										</tbody>
+									</table>
+								<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 555px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 300px;"><div class="ps-scrollbar-y" style="top: 0px; height: 230px;"></div></div></div>
+							</div><div class="panel panel-default">
+								<div class="panel-heading">
+									<i class="fa fa-users"></i>
+									Bloggers: Engaged
+									<div class="panel-tools pull-right">
+										<a href="index.html#" class="btn btn-xs btn-link panel-collapse collapses">
+										</a>
+										<a data-toggle="modal" href="index.html#panel-config" class="btn btn-xs btn-link panel-config">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<a href="index.html#" class="btn btn-xs btn-link panel-refresh">
+											<i class="fa fa-refresh"></i>
+										</a>
+										<a href="index.html#" class="btn btn-xs btn-link panel-close">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div style="height:300px" class="panel-body panel-scroll ps-container">
+									<table id="sample-table-1" class="table table-striped table-hover">
+										<thead>
+											<tr>
+												<th class="center">Photo</th>
+												<th>Full Name</th>
+												<th class="hidden-xs">Email</th>
+												<th>Articles</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="center"><img alt="image" src="./images/user.png"></td>
+												<td>Peter Parker</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													spiderman@example.com
+												</a></td>
+												<td>
+												<a target="_blank" rel="nofollow" href="#">
+													7
+												</a>
+												</td>
+
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/gravatar/storm.png"></td>
+												<td>Ororo Monroe</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													storm@example.com
+												</a></td>
+												<td>
+												<a target="_blank" rel="nofollow" href="#">
+													3
+												</a>
+												</td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/gravatar/america.png"></td>
+												<td>Steven Rogers</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													america@example.com
+												</a></td>
+												<td>
+												<a target="_blank" rel="nofollow" href="#">
+													3
+												</a>
+												</td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/user.png"></td>
+												<td>Thaddeus Ross</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													redhulk@example.com
+												</a></td>
+												<td>
+												<a target="_blank" rel="nofollow" href="#">
+													1
+												</a>
+												</td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="center"><img alt="image" src="./images/user.png"></td>
+												<td>Tandy Bowen</td>
+												<td class="hidden-xs">
+												<a target="_blank" rel="nofollow" href="index.html#">
+													dagger@example.com
+												</a></td>
+												<td>
+												<a target="_blank" rel="nofollow" href="#">
+													3
+												</a>
+												</td>
+												<td class="center">
+												<div>
+													<div class="btn-group">
+														<a href="index.html#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle btn-sm">
+															<i class="fa fa-cog"></i> <span class="caret"></span>
+														</a>
+														<ul class="dropdown-menu pull-right" role="menu">
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-edit"></i> Edit
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-share"></i> Share
+																</a>
+															</li>
+															<li role="presentation">
+																<a href="index.html#" tabindex="-1" role="menuitem">
+																	<i class="fa fa-times"></i> Remove
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div></td>
+											</tr>
+										</tbody>
+									</table>
+								<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 555px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 300px;"><div class="ps-scrollbar-y" style="top: 0px; height: 230px;"></div></div></div>
+							</div>
+				</section>
+				<section class="data col-md-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<i class="fa fa-bar-chart-o"></i>
+							Analytics
+									<div class="panel-tools pull-right">
+										<a href="index.html#" class="btn btn-xs btn-link panel-collapse collapses">
+										</a>
+										<a data-toggle="modal" href="index.html#panel-config" class="btn btn-xs btn-link panel-config">
+											<i class="fa fa-wrench"></i>
+										</a>
+										<a href="index.html#" class="btn btn-xs btn-link panel-refresh">
+											<i class="fa fa-refresh"></i>
+										</a>
+										<a href="index.html#" class="btn btn-xs btn-link panel-close">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+						</div>
+						<div class="panel-body">
+							<div id="analysis" style="width: auto; height: 200px;"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div> <!-- /container -->
+<!-- JavaScript Files -->
+<!-- Placed at the end of the document so the page loads faster -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="js/libs/flot/jquery.flot.js"></script>
+<script src="js/libs/flot/jquery.flot.time.js"></script>
+<script src="js/libs/flot/jquery.flot.canvas.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/libs/flot/excanvas.min.js"></script><![endif]-->
+						<script type="text/javascript">
+						$(function() {
+
+	var container = $("#analysis");
+
+	// Determine how many data points to keep based on the placeholder's initial size;
+	// this gives us a nice high-res plot while avoiding more than one point per pixel.
+
+	var maximum = container.outerWidth() / 2 || 300;
+
+	//
+
+	var data = [];
+
+    function getRandomData() {
+
+        if (data.length) {
+            data = data.slice(1);
+        }
+
+        while (data.length < maximum) {
+            var previous = data.length ? data[data.length - 1] : 50;
+            var y = previous + Math.random() * 10 - 5;
+            data.push(y < 0 ? 0 : y > 100 ? 100 : y);
+        }
+
+        // zip the generated y values with the x values
+
+        var res = [];
+        for (var i = 0; i < data.length; ++i) {
+            res.push([i, data[i]])
+        }
+
+        return res;
+    }
+
+	//
+
+	series = [{
+		data: getRandomData(),
+		lines: {
+			fill: true
+		}
+	}];
+
+	//
+
+	var plot = $.plot(container, series, {
+		grid: {
+			borderWidth: 1,
+			minBorderMargin: 20,
+			labelMargin: 10,
+			backgroundColor: {
+				colors: ["#fff", "#e4f4f4"]
+			},
+			margin: {
+				top: 8,
+				bottom: 20,
+				left: 20
+			},
+			markings: function(axes) {
+				var markings = [];
+				var xaxis = axes.xaxis;
+				for (var x = Math.floor(xaxis.min); x < xaxis.max; x += xaxis.tickSize * 2) {
+					markings.push({ xaxis: { from: x, to: x + xaxis.tickSize }, color: "rgba(232, 232, 255, 0.2)" });
+				}
+				return markings;
+			}
+		},
+		xaxis: {
+			tickFormatter: function() {
+				return "";
+			}
+		},
+		yaxis: {
+			min: 0,
+			max: 110
+		},
+		legend: {
+			show: true
+		}
+	});
+
+	// Create the demo X and Y axis labels
+
+	var yaxisLabel = $("<div class='axisLabel yaxisLabel'></div>")
+		.text("Response Time (ms)")
+		.appendTo(container);
+
+	// Since CSS transforms use the top-left corner of the label as the transform origin,
+	// we need to center the y-axis label by shifting it down by half its width.
+	// Subtract 20 to factor the chart's bottom margin into the centering.
+
+	yaxisLabel.css("margin-top", yaxisLabel.width() / 2 - 20);
+
+	// Update the random dataset at 25FPS for a smoothly-animating chart
+
+	setInterval(function updateRandom() {
+		series[0].data = getRandomData();
+		plot.setData(series);
+		plot.draw();
+	}, 40);
+
+});
+						</script>
+	</body>
+</html>
