@@ -47,3 +47,23 @@
 	font-size: 36px;
 	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.0, M12=0.33, M21=-0.33, M22=0.0,sizingMethod='auto expand');
 }
+
+
+/* hayden */
+tbody tr {
+	cursor: pointer;
+}
+
+.panel .profile-image {
+	margin: 10px;
+	width: 100%;
+	max-height: none;
+}
+
+.panel .list-group-link {
+	color: #428bca;
+}
+
+.panel .contact-btn {
+	margin-left: 10px !important;
+}
