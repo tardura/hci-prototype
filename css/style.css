@@ -60,13 +60,6 @@ tbody tr {
 	max-height: none;
 }
 
-.edit-button{
-	position: absolute;
-	left: 99%;
-	top: 77%;
-	width: 142%;
-}
-
 .subgrp{
 	display:inline-table;
 	width:49%;
